@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_contato"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/teal_700" />
+
+
+    <TextView
+        android:id="@+id/tv_nome_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_contato"
+        app:layout_constraintTop_toTopOf="@id/iv_contato"
+        android:textStyle="bold"
+        tools:text="Fulano de Tal" />
+
+    <TextView
+        android:id="@+id/tv_celular_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_contato"
+        app:layout_constraintStart_toEndOf="@+id/iv_contato"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome_contato"
+        tools:text="+55 (xx) x xxxx-xxxx" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
